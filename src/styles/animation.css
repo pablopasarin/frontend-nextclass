@@ -1,0 +1,26 @@
+@keyframes blink {
+    0% {
+      opacity: 1;
+      transform: scale(0.85);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0.5;
+      transform: scale(0.85);
+    }
+  }
+  
+  .blink {
+    animation: blink 1.5s infinite ease-in-out;
+  }
+  
+  .input-with-placeholder {
+    position: relative;
+  }
+  
+  .input-with-placeholder:focus + .absolute {
+    display: none; /* Oculta el placeholder animado cuando el usuario escribe */
+  }

@@ -1,0 +1,93 @@
+.floating-menu {
+    width: 300px;
+    height: auto;
+    max-height: 400px;
+    overflow: auto;
+    user-select: none; /* Evita la selección de texto durante el arrastre */
+  }
+  .floating-menu.loaded {
+    animation: popup 0.3s ease-out; /* Aplica la animación */
+  }
+  @keyframes popup {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .floating-menu:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu-header button {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .menu-header button:hover {
+    color: #e74c3c;
+  }
+
+  .floating-menu.closing {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s;
+  }
+
+
+/* students table */
+  .ag-theme-quartz {
+    /* Changes the color of the grid text */
+      --ag-foreground-color: rgb(14, 68, 145);
+      /* Changes the color of the grid background */
+      --ag-background-color: rgb(241, 247, 255);
+      /* Changes the header color of the top row */
+      --ag-header-background-color: rgb(228, 237, 250);
+      /* Changes the hover color of the row*/
+      --ag-row-hover-color: rgb(216, 226, 255);
+}
+
+/* Contenedor en edición markdown*/
+
+.markdown-editor{
+    background-color: #fff;
+    border-left: 5px solid #007bff; /* Barra azul */
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Títulos */
+  .markdown-editor h1,
+  .markdown-editor h2,
+  .markdown-editor h3 {
+    color: #0056b3; /* Azul oscuro */
+    font-weight: bold;
+  }
+  
+  /* Enlaces */
+  .markdown-editor a {
+    color: #007bff; /* Azul claro */
+    text-decoration: underline;
+  }
+  
+  /* Fórmulas */
+  .markdown-editor .katex {
+    color: #2a9d8f; /* Verde */
+    font-weight: bold;
+  }
+  
+  /* Código */
+  .markdown-editor code {
+    background-color: #f8f9fa;
+    color: #d6336c; /* Rosado */
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  /* Elementos de visualización */
+  .markdown-viewer {
+    background-color: #f8f9fa;
+  }
